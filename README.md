@@ -57,4 +57,5 @@ Error: Cannot find module 'autoprefixer'
 3. npm list -> npm 설치 확인
 4. npm remove 이름 -> npm 설치 삭제
 5. npm install -> 기존꺼 다시 설치
+6. 단어 더블 클릭 -> shift + command + L -> 선택 단어 전체 가져와짐
 ```
