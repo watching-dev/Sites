@@ -12,4 +12,7 @@
 
 3. 위에 뭔가 달라서 다시 수정(다 no로 설정)
 순서대로 y(맨 처음할때만 나옴, 두번째는 안나오네) -> no(타입스크립트 하려면 yes) -> no(안함 ESLint) -> no(나중에 따로 함 Tailwind CSS) -> no(안함 src/ directory) -> no(안함 하면 pages 폴더 안생김 App Router recommended니까) -> no(alias 잘 모르겠다)
+4. next-site 폴더로 이동(터미널 이용할때)
+5. package.json 에서 실행 확인 -> npm run dev
+6. pages -> index.js 가 http://localhost:3000 그리는 부분
 ```
