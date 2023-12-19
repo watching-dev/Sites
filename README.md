@@ -18,6 +18,15 @@ cd next-site -> npm install -> npm run dev
 
 ```
 
+-
+
+### 에러 해결
+
+```
+Error: Cannot find module 'autoprefixer'
+-> npm install -D autoprefixer
+```
+
 ---
 
 ### 설치 방법
@@ -35,10 +44,17 @@ cd next-site -> npm install -> npm run dev
 6. pages -> index.js 가 http://localhost:3000 그리는 부분
 7. http://localhost:3001 로 나오면 vsc 종료하고 다시 하면 3000 포트로 접속됨
 8. url은 pages에서 만든 파일 이름으로 적용됨, 이름이 중요, 특히 이름 지을때 앞에 띄어쓰기 있는지도 확인
+9. tailwind css 설치(next-site 폴더에서) -> npm install -D tailwindcss
+10. tailwind.config.js 추가 -> npx tailwindcss init
+11. tailwind.config.js 에서 content에 들어가는 값은 tailwind 및 next 에서 하는 가이드마다 값이 다르기 때문에 -> tailwind css nextjs pages 검색해서 나오는걸로 복붙 -> (Styling: Tailwind CSS - Next.js) 껄로 함
+12. autoprefixer 설치 -> npm install -D autoprefixer
 ```
 
 ```
 1. ./ -> 이거는 위치가 현재 폴더
 2. ../ -> 이거는 상위 폴더 인데, @ 과 같은듯
 ../ == @/
+3. npm list -> npm 설치 확인
+4. npm remove 이름 -> npm 설치 삭제
+5. npm install -> 기존꺼 다시 설치
 ```
