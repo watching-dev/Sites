@@ -48,6 +48,7 @@ Error: Cannot find module 'autoprefixer'
 10. tailwind.config.js 추가 -> npx tailwindcss init
 11. tailwind.config.js 에서 content에 들어가는 값은 tailwind 및 next 에서 하는 가이드마다 값이 다르기 때문에 -> tailwind css nextjs pages 검색해서 나오는걸로 복붙 -> (Styling: Tailwind CSS - Next.js) 껄로 함
 12. autoprefixer 설치 -> npm install -D autoprefixer
+13. lottie-player 설치 -> npm install --save react-lottie-player
 ```
 
 ```
