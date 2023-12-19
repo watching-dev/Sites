@@ -34,5 +34,11 @@ cd next-site -> npm install -> npm run dev
 5. package.json 에서 실행 확인 -> npm run dev
 6. pages -> index.js 가 http://localhost:3000 그리는 부분
 7. http://localhost:3001 로 나오면 vsc 종료하고 다시 하면 3000 포트로 접속됨
-8. url은 pages에서 만든 파일 이름으로 적용됨, 이름이 중요
+8. url은 pages에서 만든 파일 이름으로 적용됨, 이름이 중요, 특히 이름 지을때 앞에 띄어쓰기 있는지도 확인
+```
+
+```
+1. ./ -> 이거는 위치가 현재 폴더
+2. ../ -> 이거는 상위 폴더 인데, @ 과 같은듯
+../ == @/
 ```
