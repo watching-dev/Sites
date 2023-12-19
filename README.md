@@ -2,6 +2,24 @@
 
 ---
 
+### 에러 해결(checkout하거나 깃에서 pull 받은 경우)
+
+```
+에러
+npm run dev 하면
+/sh: next: command not found 에러 해결 방법
+
+이유는
+-> next 설치가 안되어 있어서 그런것
+-> node.modules이 install 안되어 있어서 그런것
+
+해결
+cd next-site -> npm install -> npm run dev
+
+```
+
+---
+
 ### 설치 방법
 
 ```
