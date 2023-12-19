@@ -33,4 +33,5 @@ cd next-site -> npm install -> npm run dev
 4. next-site 폴더로 이동(터미널 이용할때)
 5. package.json 에서 실행 확인 -> npm run dev
 6. pages -> index.js 가 http://localhost:3000 그리는 부분
+7. http://localhost:3001 로 나오면 vsc 종료하고 다시 하면 3000 포트로 접속됨
 ```
