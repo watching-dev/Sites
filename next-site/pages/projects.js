@@ -2,7 +2,8 @@ import Layout from "@/components/layout";
 import Head from "next/head";
 import { TOKEN, DATABASE_ID } from "@/config";
 
-export default function projects() {
+export default function projects({ projects }) {
+  console.log(projects);
   return (
     <Layout>
       <Head>
@@ -11,7 +12,10 @@ export default function projects() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>프로젝트</h1>
+      <h1>전체 프로젝트: {projects.results.length}</h1>
+      {projects.results.map((project) => (
+        <h1>{project.properties.이름.title[0].plain_text}</h1>
+      ))}
     </Layout>
   );
 }
@@ -25,7 +29,15 @@ export async function getStaticProps() {
       "content-type": "application/json",
       Authorization: `Bearer ${TOKEN}`,
     },
-    body: JSON.stringify({ page_size: 100 }),
+    body: JSON.stringify({
+      sorts: [
+        {
+          property: "이름",
+          direction: "ascending",
+        },
+      ],
+      page_size: 100, // 100페이지까지 가져와라
+    }),
   };
 
   const res = await fetch(
@@ -36,7 +48,7 @@ export async function getStaticProps() {
   console.log(projects);
 
   const projectNames = projects.results.map(
-    (project) => project.properties
+    (project) => project.properties.이름.title[0].plain_text
     // .title[0].plain_text
   );
 
@@ -45,6 +57,6 @@ export async function getStaticProps() {
   console.log(`projectNames: ${projectNames}`);
 
   return {
-    props: {},
+    props: { projects },
   };
 }
