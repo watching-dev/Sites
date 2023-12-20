@@ -50,6 +50,15 @@ Error: Cannot find module 'autoprefixer'
 12. autoprefixer 설치 -> npm install -D autoprefixer
 13. lottie-player 설치 -> npm install --save react-lottie-player
 14. next-themes 설치 -> npm install next-themes
+15. 노션 api(https://developers.notion.com/) -> view my integrations -> api 통합 만들기 -> 노션 데이터 베이스 만든거 들어가서 -> 크게보기로 봐야함 -> 1시방향 점 3개 -> 연결추가 -> api 통합 만든거 클릭
+https://developers.notion.com/reference/post-database-query
+.env 토큰은 노션 api 통합 만들면서 나온 시크릿키
+데이터 베이스 아이디는 노션 데이터베이스 만든거 -> 크게 보기로 한다음 계정 옆에 값
+notion.so/계정/아이디?v=어쩌고~ -> 여기서 아이디 값(좀 김)
+크게 보기로 해서 복사해야함, notion.so/어쩌고~ 값이 아님
+16. dotenv 설치 -> npm i dotenv
+17. 노션 api로 데이터 볼 때 [Object] 또는 [object Object] 로 나오는거 있을때 그냥 object 데이터 보는게 안됨
+그래서 console.log(JSON.stringify(data)); 이렇게 해야 가져올 수 있음
 ```
 
 ```
